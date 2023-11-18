@@ -65,7 +65,7 @@ void RenderMenuDone(MenuDoneError err) {
 
     OSScreenPutFontEx(SCREEN_TV, 0, 20, message.c_str());
     if (error) {
-        OSScreenPutFontEx(SCREEN_TV, 0, 22, "An Error has occured please join the discord and tell us the issue with the Error Code.");
+        OSScreenPutFontEx(SCREEN_TV, 0, 22, "See pretendo.network/docs for details and fixes.");
     } else {
         OSScreenPutFontEx(SCREEN_TV, 0, 22, "Please reboot your console.");
     }
@@ -73,12 +73,12 @@ void RenderMenuDone(MenuDoneError err) {
     if (error) {
         OSScreenPutFontEx(SCREEN_TV, 0, 26, "HOME: Quit");
     } else {
-        OSScreenPutFontEx(SCREEN_TV, 0, 26, "A: Shut Down");
+        OSScreenPutFontEx(SCREEN_TV, 0, 26, "A: Reboot");
     }
 
     OSScreenPutFontEx(SCREEN_DRC, 0, 10, message.c_str());
     if (error) {
-        OSScreenPutFontEx(SCREEN_DRC, 0, 11, "An Error has occured please join the discord and tell us the issue with the Error Code.");
+        OSScreenPutFontEx(SCREEN_DRC, 0, 11, "See pretendo.network/docs for details and fixes.");
     } else {
         OSScreenPutFontEx(SCREEN_DRC, 0, 11, "Please reboot your console.");
     }
@@ -86,6 +86,6 @@ void RenderMenuDone(MenuDoneError err) {
     if (error) {
         OSScreenPutFontEx(SCREEN_DRC, 0, 17, "HOME: Quit");
     } else {
-        OSScreenPutFontEx(SCREEN_DRC, 0, 17, "A: Shut Down");
+        OSScreenPutFontEx(SCREEN_DRC, 0, 17, "A: Reboot");
     }
 }
